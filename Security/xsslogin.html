@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>All Site Activity : XSS Lab Site</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="description"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="alternative" type="application/rss+xml" title="RSS" href="http://www.xsslabelgg.com/activity?view=rss"><link rel="apple-touch-icon" href="http://www.xsslabelgg.com/cache/1501099743/default/aalborg_theme/homescreen.png"><link rel="icon" href="http://www.xsslabelgg.com/cache/1501099743/default/favicon.ico"><link rel="icon" sizes="16x16 32x32 48x48 64x64 128x128" type="image/svg+xml" href="http://www.xsslabelgg.com/cache/1501099743/default/favicon.svg"><link rel="icon" sizes="16x16" type="image/png" href="http://www.xsslabelgg.com/cache/1501099743/default/favicon-16.png"><link rel="icon" sizes="32x32" type="image/png" href="http://www.xsslabelgg.com/cache/1501099743/default/favicon-32.png"><link rel="icon" sizes="64x64" type="image/png" href="http://www.xsslabelgg.com/cache/1501099743/default/favicon-64.png"><link rel="icon" sizes="128x128" type="image/png" href="http://www.xsslabelgg.com/cache/1501099743/default/favicon-128.png"><link rel="manifest" href="http://www.xsslabelgg.com/manifest.json"><link rel="stylesheet" href="http://www.xsslabelgg.com/cache/1501099743/default/font-awesome/css/font-awesome.css"><link rel="stylesheet" href="http://www.xsslabelgg.com/cache/1501099743/default/elgg.css"><link rel="stylesheet" href="http://www.xsslabelgg.com/cache/1501099743/default/lightbox/elgg-colorbox-theme/colorbox.css"><script>
+		require = function () {
+		// handled in the view "elgg.js"
+		_require_queue.push(arguments);
+	};
+	_require_queue = [];
+</script>
+	</head>
+	<body>
+		<div class="elgg-page elgg-page-default">
+	<div class="elgg-page-messages">
+		<ul class="elgg-system-messages"><li class="hidden"></li><li class="elgg-message elgg-state-success">
+<p>You have been logged in.</p>
+</li></ul>
+	</div><div class="elgg-page-topbar">
+	<div class="elgg-inner">
+		<ul class="elgg-menu elgg-menu-topbar elgg-menu-topbar-alt"><li class="elgg-menu-item-account"><a href="#" class="elgg-menu-content elgg-topbar-dropdown elgg-menu-closed elgg-menu-parent">Account</a><ul class="elgg-menu elgg-child-menu"><li class="elgg-menu-item-usersettings"><a href="http://www.xsslabelgg.com/settings/user/charlie" class="elgg-menu-content">Settings</a></li><li class="elgg-menu-item-logout"><a href="http://www.xsslabelgg.com/action/logout?__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" class="elgg-menu-content">Log out</a></li></ul></li></ul><ul class="elgg-menu elgg-menu-topbar elgg-menu-topbar-default"><li class="elgg-menu-item-profile elgg-avatar elgg-avatar-topbar"><a href="http://www.xsslabelgg.com/profile/charlie" class="elgg-menu-content elgg-topbar-avatar"><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101388/di/c0/EGLIakb2dFeHMTvjGHJ-1WcoXt_LLCVB2Q7IOoApB1M/1/46/profile/46topbar.jpg" alt="Charlie" title="Profile" class="elgg-border-plain elgg-transition"/></a></li><li class="elgg-menu-item-friends"><a href="http://www.xsslabelgg.com/friends/charlie" title="Friends" class="elgg-menu-content"><span class="elgg-icon-users elgg-icon fa fa-users"></span></a></li><li class="elgg-menu-item-messages"><a href="http://www.xsslabelgg.com/messages/inbox/charlie" title="Messages" class="elgg-menu-content"><span class="elgg-icon-mail elgg-icon fa fa-envelope-o"></span></a></li></ul>	</div>
+</div>	<div class="elgg-page-header">
+		<div class="elgg-inner">
+			
+<h1>
+	<a class="elgg-heading-site" href="http://www.xsslabelgg.com/">
+		XSS Lab Site	</a>
+</h1>
+
+		</div>
+	</div>
+	<div class="elgg-page-navbar">
+		<div class="elgg-inner">
+			
+<a class="elgg-button-nav" rel="toggle" data-toggle-selector=".elgg-nav-collapse" href="#">
+	<span class="elgg-icon-bars elgg-icon fa fa-bars"></span></a>
+
+<div class="elgg-nav-collapse">
+	<ul class="elgg-menu elgg-menu-site elgg-menu-site-default clearfix"><li class="elgg-menu-item-activity elgg-state-selected"><a href="http://www.xsslabelgg.com/activity" class="elgg-menu-content">Activity</a></li><li class="elgg-menu-item-blog"><a href="http://www.xsslabelgg.com/blog/all" class="elgg-menu-content">Blogs</a></li><li class="elgg-menu-item-bookmarks"><a href="http://www.xsslabelgg.com/bookmarks/all" class="elgg-menu-content">Bookmarks</a></li><li class="elgg-menu-item-file"><a href="http://www.xsslabelgg.com/file/all" class="elgg-menu-content">Files</a></li><li class="elgg-menu-item-groups"><a href="http://www.xsslabelgg.com/groups/all" class="elgg-menu-content">Groups</a></li><li class="elgg-more"><a href="#">More</a><ul class="elgg-menu elgg-menu-site elgg-menu-site-more"><li class="elgg-menu-item-members"><a href="http://www.xsslabelgg.com/members" class="elgg-menu-content">Members</a></li><li class="elgg-menu-item-pages"><a href="http://www.xsslabelgg.com/pages/all" class="elgg-menu-content">Pages</a></li><li class="elgg-menu-item-thewire"><a href="http://www.xsslabelgg.com/thewire/all" class="elgg-menu-content">The Wire</a></li></ul></li></ul></div>
+
+		</div>
+	</div>
+	<div class="elgg-page-body">
+		<div class="elgg-inner">
+			
+<div class="elgg-layout elgg-layout-one-sidebar clearfix elgg-river-layout">
+	<div class="elgg-main elgg-body">
+		<div class="elgg-head clearfix"><h2 class="elgg-heading-main">All Site Activity</h2></div><ul class="elgg-menu elgg-menu-filter elgg-menu-hz elgg-menu-filter-default"><li class="elgg-menu-item-all elgg-state-selected"><a href="http://www.xsslabelgg.com/activity/all" class="elgg-menu-content">All</a></li><li class="elgg-menu-item-mine"><a href="http://www.xsslabelgg.com/activity/owner/charlie" class="elgg-menu-content">Mine</a></li><li class="elgg-menu-item-friend"><a href="http://www.xsslabelgg.com/activity/friends/charlie" class="elgg-menu-content">Friends</a></li></ul><div class="clearfix"><label class="elgg-river-selector"><span>Filter</span> <select id="elgg-river-selector" class="elgg-input-dropdown"><option value="type=all" selected="selected">Show All</option><option value="type=user">Show Users</option><option value="type=object&amp;subtype=comment">Show Comments</option><option value="type=object&amp;subtype=blog">Show Blogs</option><option value="type=object&amp;subtype=bookmarks">Show Bookmarks</option><option value="type=object&amp;subtype=discussion">Show Discussion topics</option><option value="type=object&amp;subtype=file">Show Files</option><option value="type=object&amp;subtype=page">Show Pages</option><option value="type=object&amp;subtype=page_top">Show Top-level pages</option><option value="type=object&amp;subtype=thewire">Show Wire posts</option><option value="type=group">Show Groups</option></select></label></div><ul class="elgg-list elgg-list-river"><li class="elgg-item" id="item-river-19"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader" data-elgg-menu-data="{&quot;g&quot;:44,&quot;pog&quot;:46,&quot;c&quot;:[&quot;activity&quot;],&quot;m&quot;:&quot;XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc&quot;,&quot;i&quot;:[]}"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Gu4EOy_j4fdx3LDwaxIQBXECpvFnDwLGxSwPzuy2U1Y/1/44/profile/44small.jpg" alt="Alice" title="Alice" class=""/></a></div>
+</div><div class="elgg-body"><ul class="elgg-menu elgg-menu-river elgg-menu-hz elgg-menu-river-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=57&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=57&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="57" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=57&quot;}" rel="nofollow">0 likes</a></li></ul>
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/alice" class="elgg-river-subject">Alice</a> commented on the blog <a href="http://www.xsslabelgg.com/comment/view/57/52" class="elgg-river-target">what is love?</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 10:40am" datetime="2019-09-02T10:40:46+00:00">5 days ago</time></span></div>
+<div class="elgg-river-message">so true, u r a genius(y)</div>
+
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-18"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Gu4EOy_j4fdx3LDwaxIQBXECpvFnDwLGxSwPzuy2U1Y/1/44/profile/44small.jpg" alt="Alice" title="Alice" class=""/></a></div>
+</div><div class="elgg-body"><ul class="elgg-menu elgg-menu-river elgg-menu-hz elgg-menu-river-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=56&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=56&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="56" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=56&quot;}" rel="nofollow">0 likes</a></li></ul>
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/alice" class="elgg-river-subject">Alice</a> commented on the blog <a href="http://www.xsslabelgg.com/comment/view/56/52" class="elgg-river-target">what is love?</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 10:33am" datetime="2019-09-02T10:33:58+00:00">5 days ago</time></span></div>
+<div class="elgg-river-message">so true, u r a genius(y)</div>
+
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-17"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader" data-elgg-menu-data="{&quot;g&quot;:47,&quot;pog&quot;:46,&quot;c&quot;:[&quot;activity&quot;],&quot;m&quot;:&quot;TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU&quot;,&quot;i&quot;:[]}"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/AxUOW77MQrewMvozzZ2O5MLCx6FlHfHbBZrh2IGzTHc/1/47/profile/47small.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div><div class="elgg-body"><ul class="elgg-menu elgg-menu-river elgg-menu-hz elgg-menu-river-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=55&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=55&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="55" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=55&quot;}" rel="nofollow">0 likes</a></li></ul>
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-subject">Samy</a> commented on the blog <a href="http://www.xsslabelgg.com/comment/view/55/52" class="elgg-river-target">what is love?</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 10:31am" datetime="2019-09-02T10:31:07+00:00">5 days ago</time></span></div>
+<div class="elgg-river-message">ssd</div>
+
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-16"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TwOuwe6T7kRyvMDzoFmgRslPDChP2sc3lUj6xlkuK_Y" class="elgg-menu elgg-menu-hover elgg-ajax-loader" data-elgg-menu-data="{&quot;g&quot;:45,&quot;pog&quot;:46,&quot;c&quot;:[&quot;activity&quot;],&quot;m&quot;:&quot;TwOuwe6T7kRyvMDzoFmgRslPDChP2sc3lUj6xlkuK_Y&quot;,&quot;i&quot;:[]}"></ul><a href="http://www.xsslabelgg.com/profile/boby" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101353/di/c0/sdrBJucx2CTMo3bllczwQS83IF-n5hqYcUKwPiIjTXg/1/45/profile/45small.jpg" alt="Boby" title="Boby" class=""/></a></div>
+</div><div class="elgg-body"><ul class="elgg-menu elgg-menu-river elgg-menu-hz elgg-menu-river-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=54&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=54&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="54" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=54&quot;}" rel="nofollow">0 likes</a></li></ul>
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/boby" class="elgg-river-subject">Boby</a> commented on the blog <a href="http://www.xsslabelgg.com/comment/view/54/52" class="elgg-river-target">what is love?</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 9:48am" datetime="2019-09-02T09:48:11+00:00">5 days ago</time></span></div>
+<div class="elgg-river-message">helllo</div>
+
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-15"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Gu4EOy_j4fdx3LDwaxIQBXECpvFnDwLGxSwPzuy2U1Y/1/44/profile/44small.jpg" alt="Alice" title="Alice" class=""/></a></div>
+</div><div class="elgg-body"><ul class="elgg-menu elgg-menu-river elgg-menu-hz elgg-menu-river-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=53&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=53&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="53" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=53&quot;}" rel="nofollow">0 likes</a></li></ul>
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/alice" class="elgg-river-subject">Alice</a> commented on the blog <a href="http://www.xsslabelgg.com/comment/view/53/52" class="elgg-river-target">what is love?</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 9:40am" datetime="2019-09-02T09:40:05+00:00">5 days ago</time></span></div>
+<div class="elgg-river-message">so true, u r a genius</div>
+
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-14"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/AxUOW77MQrewMvozzZ2O5MLCx6FlHfHbBZrh2IGzTHc/1/47/profile/47small.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div><div class="elgg-body"><ul class="elgg-menu elgg-menu-river elgg-menu-hz elgg-menu-river-default"><li class="elgg-menu-item-comment"><a href="#comments-add-52-14" title="Comment on this" rel="toggle" class="elgg-menu-content"><span class="elgg-icon-speech-bubble elgg-icon fa fa-comment"></span></a></li><li class="elgg-menu-item-likes hidden"><a href="http://www.xsslabelgg.com/action/likes/add?guid=52&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=52&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link" href="#" data-likes-guid="52" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=52&quot;}" rel="nofollow">2 likes</a></li></ul>
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-subject">Samy</a> published a blog post <a href="http://www.xsslabelgg.com/blog/view/52/what-is-love" class="elgg-river-object">what is love?</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 9:39am" datetime="2019-09-02T09:39:10+00:00">5 days ago</time></span></div>
+<div class="elgg-river-message">you may love yourself but true love is excepting u.</div>
+
+<div class="elgg-river-responses"><ul class="elgg-list elgg-river-comments"><li class="elgg-item elgg-item-object elgg-item-object-comment" id="elgg-object-55"><div class="elgg-image-block clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/-7x8KXJDLYr54c-SEJRp8NRkm38Bf4ccLIHlFwQNB6k/1/47/profile/47tiny.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div><div class="elgg-body"><a name="comment-55"></a>
+<div class="mbn">
+	<ul class="elgg-menu elgg-menu-entity elgg-menu-hz float-alt elgg-menu-entity-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=55&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=55&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="55" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=55&quot;}" rel="nofollow">0 likes</a></li></ul>
+	<a href="http://www.xsslabelgg.com/profile/samy">Samy</a>
+	<span class="elgg-subtext">
+		<a href="http://www.xsslabelgg.com/comment/view/55/52"><time title="2 September 2019 @ 10:31am" datetime="2019-09-02T10:31:07+00:00">5 days ago</time></a>
+	</span>
+	<div class="elgg-output elgg-inner" data-role="comment-text">ssd</div>
+</div></div>
+</div></li><li class="elgg-item elgg-item-object elgg-item-object-comment" id="elgg-object-56"><div class="elgg-image-block clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Ej7_svamRHOi0A2LGP_XaA7afJwQTThcOpRO_1aRIf0/1/44/profile/44tiny.jpg" alt="Alice" title="Alice" class=""/></a></div>
+</div><div class="elgg-body"><a name="comment-56"></a>
+<div class="mbn">
+	<ul class="elgg-menu elgg-menu-entity elgg-menu-hz float-alt elgg-menu-entity-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=56&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=56&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="56" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=56&quot;}" rel="nofollow">0 likes</a></li></ul>
+	<a href="http://www.xsslabelgg.com/profile/alice">Alice</a>
+	<span class="elgg-subtext">
+		<a href="http://www.xsslabelgg.com/comment/view/56/52"><time title="2 September 2019 @ 10:33am" datetime="2019-09-02T10:33:58+00:00">5 days ago</time></a>
+	</span>
+	<div class="elgg-output elgg-inner" data-role="comment-text">so true, u r a genius(y)</div>
+</div></div>
+</div></li><li class="elgg-item elgg-item-object elgg-item-object-comment" id="elgg-object-57"><div class="elgg-image-block clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Ej7_svamRHOi0A2LGP_XaA7afJwQTThcOpRO_1aRIf0/1/44/profile/44tiny.jpg" alt="Alice" title="Alice" class=""/></a></div>
+</div><div class="elgg-body"><a name="comment-57"></a>
+<div class="mbn">
+	<ul class="elgg-menu elgg-menu-entity elgg-menu-hz float-alt elgg-menu-entity-default"><li class="elgg-menu-item-likes"><a href="http://www.xsslabelgg.com/action/likes/add?guid=57&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Like this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up elgg-icon fa fa-thumbs-up"></span></a></li><li class="elgg-menu-item-unlike hidden"><a href="http://www.xsslabelgg.com/action/likes/delete?guid=57&amp;__elgg_ts=1567859902&amp;__elgg_token=Yqi0sW2tAvtJcEtyBBQ81w" title="Unlike this" class="elgg-menu-content"><span class="elgg-icon-thumbs-up-alt elgg-icon fa fa-thumbs-up elgg-icon-hover"></span></a></li><li class="elgg-menu-item-likes-count"><a title="See who liked this" class="elgg-lightbox elgg-non-link hidden" href="#" data-likes-guid="57" data-colorbox-opts="{&quot;maxHeight&quot;:&quot;85%&quot;,&quot;href&quot;:&quot;http:\/\/www.xsslabelgg.com\/ajax\/view\/likes\/popup?guid=57&quot;}" rel="nofollow">0 likes</a></li></ul>
+	<a href="http://www.xsslabelgg.com/profile/alice">Alice</a>
+	<span class="elgg-subtext">
+		<a href="http://www.xsslabelgg.com/comment/view/57/52"><time title="2 September 2019 @ 10:40am" datetime="2019-09-02T10:40:46+00:00">5 days ago</time></a>
+	</span>
+	<div class="elgg-output elgg-inner" data-role="comment-text">so true, u r a genius(y)</div>
+</div></div>
+</div></li></ul><div class="elgg-river-more"><a href="http://www.xsslabelgg.com/blog/view/52/what-is-love">View all 5 comments</a></div><form method="post" action="http://www.xsslabelgg.com/action/comment/save" id="comments-add-52-14" class="hidden elgg-form-comment-save elgg-form"><fieldset><input name="__elgg_token" value="Yqi0sW2tAvtJcEtyBBQ81w" type="hidden"><input name="__elgg_ts" value="1567859902" type="hidden"><input value="" type="text" name="generic_comment" required="required" class="elgg-input-text"><input name="entity_guid" value="52" type="hidden"><input type="submit" value="Comment" class="elgg-button-submit elgg-button"></fieldset></form></div></div>
+</div></li><li class="elgg-item" id="item-river-13"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Gu4EOy_j4fdx3LDwaxIQBXECpvFnDwLGxSwPzuy2U1Y/1/44/profile/44small.jpg" alt="Alice" title="Alice" class=""/></a></div>
+</div><div class="elgg-body">
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/alice" class="elgg-river-subject">Alice</a> is now a friend with <a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-object">Samy</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 5:26am" datetime="2019-09-02T05:26:23+00:00">5 days ago</time></span></div>
+
+<div class="elgg-river-attachments clearfix"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XvZs5ZMTbeUdQxoWxGuT_ClXLgxjo8NQpMiohHvDxyc" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/alice" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101320/di/c0/Ej7_svamRHOi0A2LGP_XaA7afJwQTThcOpRO_1aRIf0/1/44/profile/44tiny.jpg" alt="Alice" title="Alice" class=""/></a></div>
+<span class="elgg-icon-arrow-right elgg-icon fa fa-arrow-right"></span><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/-7x8KXJDLYr54c-SEJRp8NRkm38Bf4ccLIHlFwQNB6k/1/47/profile/47tiny.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div>
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-12"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/AxUOW77MQrewMvozzZ2O5MLCx6FlHfHbBZrh2IGzTHc/1/47/profile/47small.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div><div class="elgg-body">
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-subject">Samy</a> is now a friend with <a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-object">Samy</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 5:26am" datetime="2019-09-02T05:26:00+00:00">5 days ago</time></span></div>
+
+<div class="elgg-river-attachments clearfix"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/-7x8KXJDLYr54c-SEJRp8NRkm38Bf4ccLIHlFwQNB6k/1/47/profile/47tiny.jpg" alt="Samy" title="Samy" class=""/></a></div>
+<span class="elgg-icon-arrow-right elgg-icon fa fa-arrow-right"></span><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/-7x8KXJDLYr54c-SEJRp8NRkm38Bf4ccLIHlFwQNB6k/1/47/profile/47tiny.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div>
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-11"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/AxUOW77MQrewMvozzZ2O5MLCx6FlHfHbBZrh2IGzTHc/1/47/profile/47small.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div><div class="elgg-body">
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-subject">Samy</a> is now a friend with <a href="http://www.xsslabelgg.com/profile/charlie" class="elgg-river-object">Charlie</a>  <span class="elgg-river-timestamp"><time title="2 September 2019 @ 4:45am" datetime="2019-09-02T04:45:07+00:00">5 days ago</time></span></div>
+
+<div class="elgg-river-attachments clearfix"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/-7x8KXJDLYr54c-SEJRp8NRkm38Bf4ccLIHlFwQNB6k/1/47/profile/47tiny.jpg" alt="Samy" title="Samy" class=""/></a></div>
+<span class="elgg-icon-arrow-right elgg-icon fa fa-arrow-right"></span><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XjYdhFBCVfkheU3MMZjxK22Z-bgNgRDmLJfzqlvDGhw" class="elgg-menu elgg-menu-hover elgg-ajax-loader" data-elgg-menu-data="{&quot;g&quot;:46,&quot;pog&quot;:46,&quot;c&quot;:[&quot;activity&quot;],&quot;m&quot;:&quot;XjYdhFBCVfkheU3MMZjxK22Z-bgNgRDmLJfzqlvDGhw&quot;,&quot;i&quot;:[]}"></ul><a href="http://www.xsslabelgg.com/profile/charlie" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101388/di/c0/ThHpaFWjWzfQUr9s9wBBCPoAyCAiovesSTI7hbjc-mc/1/46/profile/46tiny.jpg" alt="Charlie" title="Charlie" class=""/></a></div>
+</div>
+<div class="elgg-river-responses"> </div></div>
+</div></li><li class="elgg-item" id="item-river-10"><div class="elgg-image-block elgg-river-item clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-small">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/AxUOW77MQrewMvozzZ2O5MLCx6FlHfHbBZrh2IGzTHc/1/47/profile/47small.jpg" alt="Samy" title="Samy" class=""/></a></div>
+</div><div class="elgg-body">
+<div class="elgg-river-summary"><a href="http://www.xsslabelgg.com/profile/samy" class="elgg-river-subject">Samy</a> is now a friend with <a href="http://www.xsslabelgg.com/profile/charlie" class="elgg-river-object">Charlie</a>  <span class="elgg-river-timestamp"><time title="1 September 2019 @ 8:45pm" datetime="2019-09-01T20:45:31+00:00">6 days ago</time></span></div>
+
+<div class="elgg-river-attachments clearfix"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="TFKRGTWxcFwDAI_WyEPbAF470p46Q_UJymP4dXmf9HU" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/samy" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101420/di/c0/-7x8KXJDLYr54c-SEJRp8NRkm38Bf4ccLIHlFwQNB6k/1/47/profile/47tiny.jpg" alt="Samy" title="Samy" class=""/></a></div>
+<span class="elgg-icon-arrow-right elgg-icon fa fa-arrow-right"></span><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="XjYdhFBCVfkheU3MMZjxK22Z-bgNgRDmLJfzqlvDGhw" class="elgg-menu elgg-menu-hover elgg-ajax-loader"></ul><a href="http://www.xsslabelgg.com/profile/charlie" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101388/di/c0/ThHpaFWjWzfQUr9s9wBBCPoAyCAiovesSTI7hbjc-mc/1/46/profile/46tiny.jpg" alt="Charlie" title="Charlie" class=""/></a></div>
+</div>
+<div class="elgg-river-responses"> </div></div>
+</div></li></ul>	</div>
+	<div class="elgg-sidebar">
+		
+<form class="elgg-search elgg-search-header" action="http://www.xsslabelgg.com/search" method="get">
+	<fieldset>
+		<input placeholder="Search" type="text" class="search-input" size="21" name="q" autocapitalize="off" autocorrect="off" required="required" value="" />
+		<input type="hidden" name="search_type" value="all" />
+		<input type="submit" value="Go" class="search-submit-button" />
+	</fieldset>
+</form>
+<ul class="elgg-menu elgg-menu-extras elgg-menu-hz elgg-menu-extras-default"><li class="elgg-menu-item-bookmark"><a href="http://www.xsslabelgg.com/bookmarks/add/46?address=http%3A%2F%2Fwww.xsslabelgg.com%2Factivity" title="Bookmark this page" rel="nofollow" class="elgg-menu-content"><span class="elgg-icon-push-pin-alt elgg-icon fa fa-thumb-tack elgg-icon-hover"></span></a></li><li class="elgg-menu-item-rss"><a href="http://www.xsslabelgg.com/activity?view=rss" title="RSS feed for this page" class="elgg-menu-content"><span class="elgg-icon-rss elgg-icon fa fa-rss-square"></span></a></li><li class="elgg-menu-item-report-this"><a href="http://www.xsslabelgg.com/reportedcontent/add" title="Report this page to an administrator" class="elgg-menu-content elgg-lightbox"><span class="elgg-icon-report-this elgg-icon fa fa-report-this"></span></a></li></ul><div class="elgg-owner-block elgg-module"><div class="elgg-head"><div class="elgg-image-block clearfix" >
+	<div class="elgg-image"><div class="elgg-avatar elgg-avatar-tiny">
+<span class="elgg-icon-hover-menu elgg-icon fa fa-caret-down"></span><ul rel="h-lsOPr0dpxJCJ9I65cwXd7awxFaw8SdoHhFF8nbzQQ" class="elgg-menu elgg-menu-hover elgg-ajax-loader" data-elgg-menu-data="{&quot;g&quot;:46,&quot;pog&quot;:46,&quot;c&quot;:[&quot;activity&quot;,&quot;owner_block&quot;],&quot;m&quot;:&quot;h-lsOPr0dpxJCJ9I65cwXd7awxFaw8SdoHhFF8nbzQQ&quot;,&quot;i&quot;:[]}"></ul><a href="http://www.xsslabelgg.com/profile/charlie" class=""><img src="http://www.xsslabelgg.com/serve-file/e0/l1501101388/di/c0/ThHpaFWjWzfQUr9s9wBBCPoAyCAiovesSTI7hbjc-mc/1/46/profile/46tiny.jpg" alt="Charlie" title="Charlie" class=""/></a></div>
+</div><div class="elgg-body"><h3><a href="http://www.xsslabelgg.com/profile/charlie" rel="me">Charlie</a></h3><div class="elgg-subtext"></div></div>
+</div></div><div class="elgg-body"><ul class="elgg-menu elgg-menu-owner-block elgg-menu-owner-block-default"><li class="elgg-menu-item-blog"><a href="http://www.xsslabelgg.com/blog/owner/charlie" class="elgg-menu-content">Blogs</a></li><li class="elgg-menu-item-bookmarks"><a href="http://www.xsslabelgg.com/bookmarks/owner/charlie" class="elgg-menu-content">Bookmarks</a></li><li class="elgg-menu-item-file"><a href="http://www.xsslabelgg.com/file/owner/charlie" class="elgg-menu-content">Files</a></li><li class="elgg-menu-item-pages"><a href="http://www.xsslabelgg.com/pages/owner/charlie" class="elgg-menu-content">Pages</a></li><li class="elgg-menu-item-thewire"><a href="http://www.xsslabelgg.com/thewire/owner/charlie" class="elgg-menu-content">Wire posts</a></li></ul></div></div>	</div>
+</div>
+
+		</div>
+	</div>
+	<div class="elgg-page-footer">
+		<div class="elgg-inner">
+			<ul class="elgg-menu elgg-menu-footer elgg-menu-hz elgg-menu-footer-meta"><li class="elgg-menu-item-powered"><a href="http://elgg.org" title="Elgg 2.2.2" class="elgg-menu-content">Powered by Elgg</a></li></ul>
+		</div>
+	</div>
+</div><script>
+var elgg = {"config":{"lastcache":1501099743,"viewtype":"default","simplecache_enabled":1},"security":{"token":{"__elgg_ts":1567859902,"__elgg_token":"Yqi0sW2tAvtJcEtyBBQ81w"}},"session":{"user":{"guid":46,"type":"user","subtype":"","owner_guid":46,"container_guid":0,"site_guid":1,"time_created":"2017-07-26T20:30:40+00:00","time_updated":"2017-07-26T20:30:40+00:00","url":"http:\/\/www.xsslabelgg.com\/profile\/charlie","name":"Charlie","username":"charlie","language":"en","admin":false},"token":"-uxbGds--uxZZeM7FzXfjz"},"_data":{},"page_owner":{"guid":46,"type":"user","subtype":"","owner_guid":46,"container_guid":0,"site_guid":1,"time_created":"2017-07-26T20:30:40+00:00","time_updated":"2017-07-26T20:30:40+00:00","url":"http:\/\/www.xsslabelgg.com\/profile\/charlie","name":"Charlie","username":"charlie","language":"en"}};
+</script><script src="http://www.xsslabelgg.com/cache/1501099743/default/jquery.js"></script><script src="http://www.xsslabelgg.com/cache/1501099743/default/jquery-ui.js"></script><script src="http://www.xsslabelgg.com/cache/1501099743/default/elgg/require_config.js"></script><script src="http://www.xsslabelgg.com/cache/1501099743/default/require.js"></script><script src="http://www.xsslabelgg.com/cache/1501099743/default/elgg.js"></script><script>
+require([
+    "forms/comment/save",
+    "core/river/filter",
+    "elgg/reportedcontent"
+]);
+</script>
+	</body>
+</html>
